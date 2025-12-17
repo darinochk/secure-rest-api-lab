@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/securedb
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    user:
+      name: darin
+      password: "{noop}123456"
+      roles: USER
+
+jwt:
+  secret: verySecretKeyForJwt1234567890
